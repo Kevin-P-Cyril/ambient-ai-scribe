@@ -4,3 +4,5 @@ venv311/
 __pycache__/
 *.pyc
 uploads/
+*.mp3
+*.zip
