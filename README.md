@@ -1,48 +1,73 @@
 # Ambient Clinical Scribe
 
-AI-powered healthcare documentation assistant.
+## Overview
+
+Ambient Clinical Scribe is a healthcare AI application that converts doctor-patient conversations into text using automatic speech recognition (ASR). The system allows users to upload medical audio recordings and generates accurate transcripts for further clinical documentation.
 
 ## Features
 
-- Whisper-based speech transcription
-- Gemini-powered SOAP note generation
-- FastAPI backend
-- Pydantic schemas
+* Audio file upload
+* Speech-to-text transcription using OpenAI Whisper
+* FastAPI backend for audio processing
+* Clinical conversation transcription workflow
+* Pydantic schema validation
 
 ## Tech Stack
 
-- Python
-- FastAPI
-- Whisper
-- Gemini API
-- Pydantic
+* Python
+* FastAPI
+* OpenAI Whisper
+* Pydantic
+* Uvicorn
 
 ## Project Structure
 
-transcription.py
-soap_generator.py
-schemas.py
-main.py
+```text
+ambient_clinical_scribe/
+├── main.py
+├── transcription.py
+├── schemas.py
+├── requirements.txt
+├── README.md
+```
 
-## Current Progress
+## Installation
 
-✅ Audio Upload API
+### Clone Repository
 
-✅ Whisper Transcription
+```bash
+git clone <repository-url>
+```
 
-✅ Gemini SOAP Note Generation
+### Install Dependencies
 
-✅ FastAPI Backend
+```bash
+pip install -r requirements.txt
+```
 
-🚧 Doctor Review Workflow
+### Run Backend Server
 
-🚧 ICD-10 Recommendation System
+```bash
+python -m uvicorn main:app --reload
+```
 
-🚧 Streamlit Dashboard
-## Features
+## Week 1 Deliverables
 
-- Audio transcription using OpenAI Whisper
-- SOAP note generation using Gemini
-- Structured JSON SOAP output
-- ICD-10 code recommendations
-- FastAPI backend with Swagger UI
+* FastAPI backend initialization
+* Audio ingestion pipeline
+* Medical audio upload functionality
+* Speech-to-text transcription using Whisper ASR
+* Processing of clinical conversation recordings
+
+## Future Enhancements
+
+* Speaker diarization (Doctor/Patient separation)
+* SOAP note generation
+* ICD code recommendation
+* Clinical summarization
+
+## Author
+
+Naresh Kumar
+
+
