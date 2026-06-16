@@ -2,15 +2,23 @@
 
 ## Overview
 
-Ambient Clinical Scribe is a healthcare AI application that converts doctor-patient conversations into text using automatic speech recognition (ASR). The system allows users to upload medical audio recordings and generates accurate transcripts for further clinical documentation.
+Ambient Clinical Scribe is a healthcare AI application that converts doctor-patient conversations into structured transcripts using Automatic Speech Recognition (ASR). The system enables clinicians to upload medical audio recordings, process conversations, and generate transcribed outputs for further clinical documentation workflows.
+
+---
 
 ## Features
 
-* Audio file upload
-* Speech-to-text transcription using OpenAI Whisper
+### Week 1 Completed
+
+* Audio file upload and ingestion pipeline
 * FastAPI backend for audio processing
+* Speech-to-text transcription using OpenAI Whisper
 * Clinical conversation transcription workflow
+* Basic speaker diarization (Doctor/Patient identification)
 * Pydantic schema validation
+* JSON-based API responses
+
+---
 
 ## Tech Stack
 
@@ -20,16 +28,21 @@ Ambient Clinical Scribe is a healthcare AI application that converts doctor-pati
 * Pydantic
 * Uvicorn
 
+---
+
 ## Project Structure
 
 ```text
 ambient_clinical_scribe/
 ├── main.py
 ├── transcription.py
+├── diarization.py
 ├── schemas.py
 ├── requirements.txt
 ├── README.md
 ```
+
+---
 
 ## Installation
 
@@ -37,6 +50,7 @@ ambient_clinical_scribe/
 
 ```bash
 git clone <repository-url>
+cd ambient_clinical_scribe
 ```
 
 ### Install Dependencies
@@ -51,23 +65,60 @@ pip install -r requirements.txt
 python -m uvicorn main:app --reload
 ```
 
-## Week 1 Deliverables
+---
 
-* FastAPI backend initialization
-* Audio ingestion pipeline
-* Medical audio upload functionality
-* Speech-to-text transcription using Whisper ASR
-* Processing of clinical conversation recordings
+## API Workflow
 
-## Future Enhancements
+1. Upload a medical conversation audio file.
+2. Process audio through OpenAI Whisper ASR.
+3. Generate transcript text.
+4. Apply speaker diarization to distinguish:
 
-* Speaker diarization (Doctor/Patient separation)
-* SOAP note generation
-* ICD code recommendation
-* Clinical summarization
+   * Doctor
+   * Patient
+5. Return structured transcript response.
+
+---
+
+## Week 1 Deliverables (Completed)
+
+* [x] FastAPI backend initialization
+* [x] Audio ingestion pipeline
+* [x] Medical audio upload functionality
+* [x] Speech-to-text transcription using Whisper ASR
+* [x] Clinical conversation processing
+* [x] Basic speaker diarization (Doctor/Patient separation)
+
+---
+
+## Project Roadmap
+
+### Week 1: Audio Ingestion and Speaker Diarization
+
+* [x] Audio upload
+* [x] Whisper integration
+* [x] Transcript generation
+* [x] Speaker diarization
+
+### Week 2: Prompt Engineering for Clinical Structuring
+
+* [ ] SOAP Note Generation
+* [ ] Clinical information extraction
+
+### Week 3: ICD-10 Recommendation System
+
+* [ ] ICD-10 code recommendation
+* [ ] Medical coding support
+
+### Week 4: Human-in-the-Loop Dashboard
+
+* [ ] Clinical dashboard
+* [ ] Note review and editing
+* [ ] Export functionality
+
+---
 
 ## Author
 
-Naresh Kumar
-
+**Naresh Kumar**
 
