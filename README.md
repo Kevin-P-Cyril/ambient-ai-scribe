@@ -116,6 +116,49 @@ python -m uvicorn main:app --reload
 * [ ] Note review and editing
 * [ ] Export functionality
 
+## Quick Start
+
+### Option 1: Automated Setup (Recommended)
+
+Run:
+
+```text
+setup.bat
+```
+
+This will:
+
+* Create a Python virtual environment
+* Install all required dependencies
+
+### Start the Application
+
+Run:
+
+```text
+run.bat
+```
+
+This will:
+
+* Activate the virtual environment
+* Start the FastAPI server
+
+### Access API Documentation
+
+Open:
+
+```text
+http://127.0.0.1:8000/docs
+```
+
+### Test Workflow
+
+1. Open `/upload-audio`
+2. Click **Try it out**
+3. Upload an audio file
+4. Click **Execute**
+5. View the generated transcript and speaker labels
 ---
 
 ## Author
