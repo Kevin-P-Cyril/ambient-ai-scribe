@@ -126,7 +126,7 @@ Run:
 setup.bat
 ```
 
-This will:
+This will :
 
 * Create a Python virtual environment
 * Install all required dependencies
@@ -139,7 +139,7 @@ Run:
 run.bat
 ```
 
-This will:
+This will :
 
 * Activate the virtual environment
 * Start the FastAPI server
