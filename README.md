@@ -93,31 +93,31 @@ python -m uvicorn main:app --reload
 
 ## Project Roadmap
 
-### Week 1: Audio Ingestion and Speaker Diarization
+### Week 1 : Audio Ingestion and Speaker Diarization
 
 * [x] Audio upload
 * [x] Whisper integration
 * [x] Transcript generation
 * [x] Speaker diarization
 
-### Week 2: Prompt Engineering for Clinical Structuring
+### Week 2 : Prompt Engineering for Clinical Structuring
 
 * [ ] SOAP Note Generation
 * [ ] Clinical information extraction
 
-### Week 3: ICD-10 Recommendation System
+### Week 3 : ICD-10 Recommendation System
 
 * [ ] ICD-10 code recommendation
 * [ ] Medical coding support
 
-### Week 4: Human-in-the-Loop Dashboard
+### Week 4 : Human-in-the-Loop Dashboard
 
 * [ ] Clinical dashboard
 * [ ] Note review and editing
 * [ ] Export functionality
 ## Quick Start
 
-### Option 1: Automated Setup (Recommended)
+### Option 1 : Automated Setup (Recommended)
 
 Run:
 
@@ -125,7 +125,7 @@ Run:
 setup.bat
 ```
 
-This will:
+This will :
 
 * Create a Python virtual environment
 * Install all required dependencies
@@ -138,7 +138,7 @@ Run:
 run.bat
 ```
 
-This will:
+This will :
 
 * Activate the virtual environment
 * Start the FastAPI server
