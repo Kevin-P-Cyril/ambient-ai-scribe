@@ -33,5 +33,4 @@ async def upload_audio(file: UploadFile = File(...)):
     return {
         "transcript": transcript,
         "soap_note": soap_note,
-        
     }
