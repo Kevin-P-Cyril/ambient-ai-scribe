@@ -1,7 +1,7 @@
 from fastapi import FastAPI, UploadFile, File
 from transcription import transcribe_audio
 from soap_generator import generate_soap
-from icd_recommender import recommend_icd
+
 import shutil
 
 app = FastAPI()
