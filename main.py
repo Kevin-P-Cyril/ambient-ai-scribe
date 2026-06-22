@@ -27,10 +27,7 @@ async def upload_audio(file: UploadFile = File(...)):
     # Generate SOAP note
     soap_note = generate_soap(transcript)
 
-    # Generate ICD-10 recommendations
-    icd_codes = recommend_icd(
-        soap_note["assessment"]
-    )
+    
 
     # Return everything
     return {
