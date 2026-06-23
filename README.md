@@ -10,7 +10,7 @@ Ambient Clinical Scribe is a healthcare AI application that converts doctor-pati
 
 ### Week 1 Completed
 
-* Audio file upload and ingestion pipeline
+* Audio file upload and ingestion pipeline 
 * FastAPI backend for audio processing
 * Speech-to-text transcription using OpenAI Whisper
 * Clinical conversation transcription workflow
