@@ -102,8 +102,8 @@ python -m uvicorn main:app --reload
 
 ### Week 2: Prompt Engineering for Clinical Structuring
 
-* [ ] SOAP Note Generation
-* [ ] Clinical information extraction
+* [x] SOAP Note Generation
+* [x] Clinical information extraction
 
 ### Week 3: ICD-10 Recommendation System
 
