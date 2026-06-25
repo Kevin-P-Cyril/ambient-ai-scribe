@@ -1,6 +1,7 @@
 from fastapi import FastAPI, UploadFile, File
 from transcription import transcribe_audio
 from soap_generator import generate_soap
+from icd_rag_search import get_icd_codes
 
 import shutil
 
@@ -26,6 +27,9 @@ async def upload_audio(file: UploadFile = File(...)):
 
     # Generate SOAP note
     soap_note = generate_soap(transcript)
+    assessment = soap_note.get("Assessment") or soap_note.get("assessment", "")
+    print("Assessment:", assessment)
+    icd_codes = get_icd_codes(assessment)
 
     
 
@@ -33,4 +37,5 @@ async def upload_audio(file: UploadFile = File(...)):
     return {
         "transcript": transcript,
         "soap_note": soap_note,
+        "icd_codes": icd_codes
     }
