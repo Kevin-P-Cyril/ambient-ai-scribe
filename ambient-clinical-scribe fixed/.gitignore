@@ -38,3 +38,8 @@ dist/
 # OS
 .DS_Store
 Thumbs.db
+
+# Vector database generated files
+icd_db/
+*.sqlite3
+*.bin
