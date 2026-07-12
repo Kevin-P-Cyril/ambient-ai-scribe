@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Env / secrets
+.env
+.env.*
+
+# Data & generated artifacts (never commit PHI or generated DBs)
+data.db
+*.db
+icd_db/
+*.log
+server_error.log
+
+# Audio files (patient recordings / transcripts)
+uploads/
+*.mp3
+*.wav
+*.m4a
+*.flac
+
+# Model files
+*.pt
+*.pth
+*.bin
+
+# Node / frontend
+frontend-react/node_modules/
+frontend-react/dist/
+
+# General frontend
+node_modules/
+dist/
+
+# OS
+.DS_Store
+Thumbs.db
