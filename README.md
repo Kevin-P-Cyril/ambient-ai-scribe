@@ -140,8 +140,8 @@ ICD-10 Recommendation
 - [x] ICD dataset preprocessing
 - [x] Clean dataset creation
 - [x] Basic ICD recommendation module
-- [ ] RAG-based ICD retrieval
-- [ ] Vector database integration
+- [x] RAG-based ICD retrieval
+- [x] Vector database integration
 
 ---
 
