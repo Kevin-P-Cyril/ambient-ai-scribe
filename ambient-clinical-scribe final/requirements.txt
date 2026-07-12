@@ -1,0 +1,40 @@
+# Ambient Clinical Scribe - backend dependencies
+# Target: Python 3.11 (Windows-friendly). Do NOT use Python 3.13 - many of
+# these packages do not ship prebuilt wheels for it yet and will fail to build.
+
+# --- Web framework ---
+fastapi==0.111.0
+uvicorn[standard]==0.30.1
+python-multipart==0.0.9
+aiofiles==23.2.1
+pydantic==2.9.2
+python-dotenv==1.0.1
+
+# --- ASR (speech-to-text) ---
+# openai-whisper (PyTorch based) instead of faster-whisper/PyAV, which
+# require FFmpeg *development* headers that are almost never present on a
+# fresh Windows machine and break the build.
+openai-whisper==20231117
+torch==2.3.1
+numpy==1.26.4
+
+# --- LLM (local, free) ---
+ollama==0.3.3
+
+# --- RAG (ICD-10 vector search) ---
+chromadb==0.5.5
+sentence-transformers==3.0.1
+pandas==2.2.2
+
+# --- Document export ---
+python-docx==0.8.11
+fpdf2==2.7.9
+
+# --- Realtime/optional streaming ASR ---
+vosk==0.3.45
+
+# --- Dev / test tooling ---
+pytest==7.4.2
+httpx==0.27.0
+ruff==0.5.5
+flake8==6.1.0

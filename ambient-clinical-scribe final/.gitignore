@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Env / secrets
+.env
+
+# Data & generated artifacts (never commit PHI or generated DBs)
+data.db
+icd_db/
+*.log
+server_error.log
+
+# Node / frontend
+frontend-react/node_modules/
+frontend-react/dist/
+
+# OS
+.DS_Store
+Thumbs.db
